@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DogeClick — Earn Doge</title>
+<!-- Monetag SDK: ganti YOUR_ZONE_ID & show_XXXXXXX -->
+<script src="//libtl.com/sdk.js" data-zone="YOUR_ZONE_ID" data-sdk="show_XXXXXXX"></script>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header>
+  <h1>🐕 DogeClick</h1>
+  <p class="sub">Tonton iklan → dapat DOGE → WD ke FaucetPay</p>
+</header>
+
+<main>
+  <div class="balance" id="balance">0.00000000 DOGE</div>
+  <div class="progress" id="progress">0 / 3000 iklan</div>
+
+  <div class="grid" id="grid"></div>
+
+  <section class="wd">
+    <h2>Withdraw ke FaucetPay</h2>
+    <input id="fpAddr" placeholder="FaucetPay Doge address (D...)" autocomplete="off" />
+    <button id="wdBtn" disabled>Withdraw (min 2.0 DOGE)</button>
+    <div class="status" id="wdStatus">Minimal withdraw 2.0 DOGE</div>
+  </section>
+</main>
+
+<div class="toast" id="toast"></div>
+
+<script src="/app.js"></script>
+</body>
+</html>
